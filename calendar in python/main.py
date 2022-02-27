@@ -12,7 +12,7 @@ def exit():
 
 
 def show():
-     # Create a GUI window
+      # Create a GUI window
     new_gui = Tk()
      
     # Set the background colour of GUI window
@@ -32,7 +32,7 @@ def show():
     cal_content = calendar.calendar(fetch_year)
  
     # Create a label for showing the content of the calendar
-    cal_year = Label(new_gui, text = cal_content)
+    cal_year = Label(new_gui, text = cal_content, font = "Consolas 10 bold")
  
     # grid method is used for placing
     # the widgets at respective positions
@@ -41,7 +41,6 @@ def show():
      
     # start the GUI
     new_gui.mainloop()
-
 
 year = Label(root, text="Enter year", font=("Montserrat", 10, "bold"),bg="light green", fg="black")
 year.place(x=50, y=50)
